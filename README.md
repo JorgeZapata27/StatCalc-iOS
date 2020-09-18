@@ -8,4 +8,4 @@ Jorge Zapata - Frontend work + connection work
 Jake Lisowski - Function/Calculation works
 
 ## Sources
-[Designs: ](https://www.figma.com/file/PyEhCbwffVVHDI8BZO2mzD/Baseball-App?node-id=0%3A1)
+Designs: [Click Here](https://www.figma.com/file/PyEhCbwffVVHDI8BZO2mzD/Baseball-App?node-id=0%3A1)
