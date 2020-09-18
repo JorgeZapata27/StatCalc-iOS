@@ -4,7 +4,7 @@
 StatCalc is an Swift / iOS App that calculates baseball statistics from in game results. If a player has x singles, x doubles, x triples, etc; the application is to calculate the ongoing statistic chosen. 
 
 ## Contributors
-Jorge Zapata - Frontend work + connection work
+Jorge Zapata - Frontend work + connection work<br/>
 Jake Lisowski - Function/Calculation works
 
 ## Sources
