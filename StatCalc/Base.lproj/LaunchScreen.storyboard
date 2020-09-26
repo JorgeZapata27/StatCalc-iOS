@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,9 +12,44 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIE-NE-beX">
+                                <rect key="frame" x="130" y="380" width="154" height="146"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StatCalc" translatesAutoresizingMaskIntoConstraints="NO" id="XO0-jx-aub">
+                                        <rect key="frame" x="33.666666666666657" y="0.0" width="87" height="87"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="87" id="uTM-ak-7WM"/>
+                                            <constraint firstAttribute="height" constant="87" id="zBU-IQ-GBZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StatCalc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aS0-ku-xN5">
+                                        <rect key="frame" x="0.0" y="87" width="154" height="59"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="XO0-jx-aub" firstAttribute="centerX" secondItem="IIE-NE-beX" secondAttribute="centerX" id="0OZ-CX-dPk"/>
+                                    <constraint firstItem="aS0-ku-xN5" firstAttribute="leading" secondItem="IIE-NE-beX" secondAttribute="leading" id="BNG-BE-huN"/>
+                                    <constraint firstAttribute="trailing" secondItem="aS0-ku-xN5" secondAttribute="trailing" id="Zgx-Zk-6X6"/>
+                                    <constraint firstAttribute="bottom" secondItem="aS0-ku-xN5" secondAttribute="bottom" id="hQT-s8-IXe"/>
+                                    <constraint firstItem="aS0-ku-xN5" firstAttribute="top" secondItem="XO0-jx-aub" secondAttribute="bottom" id="lgb-kn-Tlk"/>
+                                    <constraint firstItem="XO0-jx-aub" firstAttribute="top" secondItem="IIE-NE-beX" secondAttribute="top" id="nJY-AC-6XM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IIE-NE-beX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="336" id="OZO-Z4-iC4"/>
+                            <constraint firstItem="IIE-NE-beX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="cum-yM-KUp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIE-NE-beX" secondAttribute="trailing" constant="130" id="ep5-Mh-UJ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IIE-NE-beX" secondAttribute="bottom" constant="336" id="zoV-SF-bNB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +58,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="StatCalc" width="480" height="480"/>
+    </resources>
 </document>
